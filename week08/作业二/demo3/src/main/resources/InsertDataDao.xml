@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.kimmking.javacourse.demo.dao.InsertaDataDao">
+    <insert id="insertData" paramType="io.kimmking.javacourse.demo.entity.InsertDataEntity">
+    insert into  tb_order_detail (id_orde,id_product,product_name,product_price,product_marque)
+    values(#{idOrder},#{idProduct},#{productName},#{productPrice},#{productMarque})
+
+    </insert>
+</mapper>
